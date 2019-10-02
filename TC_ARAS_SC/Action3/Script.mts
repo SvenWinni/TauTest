@@ -1,6 +1,6 @@
 ﻿Browser("Aras Innovator").Page("Aras Innovator").WebElement("Icon_Add_New").Click
 
-'Frame
+'Frame 4
 'Browser("Aras Innovator").Page("Aras Innovator").Frame("Frame").WebElement("document.isEditMode =").Click
 Set Props = Browser("Aras Innovator").Page("Aras Innovator").Frame("Frame").GetAllROProperties
 
