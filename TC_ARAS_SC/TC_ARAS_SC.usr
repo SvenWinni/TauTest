@@ -15,6 +15,7 @@ Action0=Action0\Script.mts
 01_Login=Action1\Script.mts
 02_Navigation=Action2\Script.mts
 03_Add_Item=Action3\Script.mts
+04_Delete_Item=Action4\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -62,3 +63,6 @@ Action2\ObjectRepository.bdb=
 Action3\Script.mts=
 Action3\Resource.mtr=
 Action3\ObjectRepository.bdb=
+Action4\Script.mts=
+Action4\Resource.mtr=
+Action4\ObjectRepository.bdb=

@@ -1,0 +1,1 @@
+﻿var __testDataSource={items:[{dataFilePath:'Default.xls',dataFileFormat:'excel',dataFileFolder:'C:\\Users\\A2741687\\OneDrive - Deutsche Telekom AG\\TRAFO\\BMW\\ARAS\\UFT-Skripte\\TC_ARAS_SC\\Res1',namePairs:[]}]};
