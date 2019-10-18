@@ -39,6 +39,7 @@ Version=14.53
 
 [TulipAddins]
 AI=
+ASPAjax=
 Database=
 File Content=
 Insight=

@@ -8,7 +8,7 @@
 Browser("Aras Innovator").Page("Aras Innovator").WebElement("Icon_Add_New").Click
 'manuell erzeugte Object Repository Elemente mit Parametrisierung:
 'Eingabe des parametrisierten Textes im Textfeld für Verwendung
-Browser("Aras Innovator").Page("Aras Innovator").WebEdit("TextBox_Verwendung").Set DataTable("Verwendung", dtGlobalSheet)
+Browser("Aras Innovator").Page("Aras Innovator").WebEdit("TB_Verwendung").Set DataTable("Verwendung", dtGlobalSheet)
 'Eingabe des parametrisierten Datums im Textfeld für Messzeitpunkt:
 Browser("Aras Innovator").Page("Aras Innovator").WebEdit("TextBox_Messzeitpunkt").Set DataTable("Messzeitpunkt", dtGlobalSheet)
 'Klickt das Speicher Icon in der Toolbar
@@ -23,6 +23,6 @@ Browser("Aras Innovator").Page("Aras Innovator").Frame("Frame").WebElement("Mess
 'Bsp. für Toolbar Icon
 'Browser("Aras Innovator").Page("Aras Innovator").WebElement("xpath:=//*[@id='top_toolbar']/div/div/div[1]/span[21]").Click
 
-	'*******************************************************************
-	'End Of Action :  03_Add_Item
-	'*******************************************************************
+'*******************************************************************
+'End Of Action :  03_Add_Item
+'*******************************************************************

@@ -10,6 +10,7 @@
 	'*******************************************************************
 
 'Startet den Login Prozess
+SystemUtil.Run "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe", "http://80.158.47.39/11SP15_Demo/Client/X-salt=2_11.0.0.7181-X/default.aspx"
 'Eingabe des Nutzernamens
 Browser("Aras Innovator Login").Page("Aras Innovator Login").Frame("main").WebEdit("username").Set "admin" @@ script infofile_;_ZIP::ssf1.xml_;_
 'Eingabe des Passworts

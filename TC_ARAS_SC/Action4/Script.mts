@@ -3,7 +3,7 @@
 '*******************************************************************
 
 'Überspringt die aktuelle Action:
-exitAction
+'exitAction
 'Auswahl des angelegten Elementes in der Tabelle
 Browser("Aras Innovator").Page("Aras Innovator").Frame("Frame").WebElement("Cell_Verwendung").Click @@ script infofile_;_ZIP::ssf1.xml_;_
 'Klickt auf das Lösch Icon
