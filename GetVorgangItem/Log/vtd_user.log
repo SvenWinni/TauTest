@@ -1,0 +1,140 @@
+2019-10-24 12:50:17,084 [1] INFO  - Loaded appender: FileAppenderInternal
+2019-10-24 12:50:17,105 [1] INFO  - Loaded appender: FileAppenderExternal
+2019-10-24 12:50:17,105 [1] INFO  - Loaded appender: UserLoggerAppender
+2019-10-24 12:50:17,106 [1] INFO  - Loaded appender: FileAppenderInternal
+2019-10-24 12:50:17,107 [1] INFO  - Loaded appender: FileAppenderExternal
+2019-10-24 12:50:17,107 [1] INFO  - Loaded appender: UserLoggerAppender
+2019-10-24 12:50:18,004 [9] INFO  - Step 'Start' : Step 'Start' started
+2019-10-24 12:50:18,068 [9] INFO  - Step 'Start' ended successfully
+2019-10-24 12:50:18,079 [9] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2019-10-24 12:50:18,083 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2019-10-24 12:50:18,087 [9] INFO  - Step 'GetARASOAuth' : Step 'GetARASOAuth' started
+2019-10-24 12:50:19,868 [4] INFO  - Step 'GetARASOAuth' : Step 'Start' : Step 'Start' started
+2019-10-24 12:50:19,965 [6] INFO  - Step 'GetARASOAuth' : Step 'Start' ended successfully
+2019-10-24 12:50:19,973 [5] INFO  - Step 'GetARASOAuth' : Step 'Test Flow' : Step 'Test Flow' started
+2019-10-24 12:50:19,983 [4] INFO  - Step 'GetARASOAuth' : Step 'Iteration 1' : Step 'Iteration 1' started
+2019-10-24 12:50:19,987 [4] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthLocation' : Step 'GetOAuthLocation' started
+2019-10-24 12:50:20,050 [5] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthLocation' : Fetching HTTP Url: 'http://80.158.47.39/11SP15_Demo/Server/OAuthServerDiscovery.aspx'
+2019-10-24 12:50:20,607 [4] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthLocation' : Server returned status code: 200
+2019-10-24 12:50:20,611 [3] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthLocation' : HTTP Raw request:
+2019-10-24 12:50:20,614 [5] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthLocation' : GET http://80.158.47.39/11SP15_Demo/Server/OAuthServerDiscovery.aspx 1.1
+Host: 80.158.47.39
+Proxy-Connection: Keep-Alive
+
+2019-10-24 12:50:20,619 [4] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthLocation' : HTTP Raw response:
+2019-10-24 12:50:20,622 [3] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthLocation' : HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/json; charset=utf-8
+Date: Thu, 24 Oct 2019 10:50:20 GMT,Thu, 24 Oct 2019 10:50:20 GMT
+Expires: Thu, 24 Oct 2019 10:50:20 GMT
+Server: SimpleHTTP/0.6 Python/3.6.4,Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 70
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Set-Cookie: ASP.NET_SessionId=dz2ihxzr0123yjze4c2jfug2; path=/; HttpOnly
+X-BlueCoat-Authorization: 3115d594959f74a2=2CA4A42800000102zyh0Lhay9V3qAbVPiXh2cVe7t78LCgAAAgEAAGu5JQCEAwAAAAAAAPY4EQAAAAAA
+{"locations":[{"uri":"http://80.158.47.39/11SP15_Demo/oauthserver/"}]}
+2019-10-24 12:50:20,699 [3] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthLocation' ended successfully
+2019-10-24 12:50:20,703 [4] INFO  - Step 'GetARASOAuth' : Step 'OAuthConfigURL' : Step 'OAuthConfigURL' started
+2019-10-24 12:50:20,714 [4] INFO  - Step 'GetARASOAuth' : Step 'OAuthConfigURL' : Input Parameter 'Prefix', Value: 'http://80.158.47.39/11SP15_Demo/oauthserver/'
+2019-10-24 12:50:20,718 [3] INFO  - Step 'GetARASOAuth' : Step 'OAuthConfigURL' : Input Parameter 'Suffix', Value: '.well-known/openid-configuration'
+2019-10-24 12:50:20,721 [5] INFO  - Step 'GetARASOAuth' : Step 'OAuthConfigURL' : Output Parameter 'Result', Value: 'http://80.158.47.39/11SP15_Demo/oauthserver/.well-known/openid-configuration'
+2019-10-24 12:50:20,726 [5] INFO  - Step 'GetARASOAuth' : Step 'OAuthConfigURL' ended successfully
+2019-10-24 12:50:20,729 [3] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthConfig' : Step 'GetOAuthConfig' started
+2019-10-24 12:50:20,733 [3] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthConfig' : Fetching HTTP Url: 'http://80.158.47.39/11SP15_Demo/oauthserver/.well-known/openid-configuration'
+2019-10-24 12:50:21,054 [5] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthConfig' : Server returned status code: 200
+2019-10-24 12:50:21,057 [4] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthConfig' : HTTP Raw request:
+2019-10-24 12:50:21,060 [3] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthConfig' : GET http://80.158.47.39/11SP15_Demo/oauthserver/.well-known/openid-configuration 1.1
+Accept: application/json
+Host: 80.158.47.39
+Cookie: ASP.NET_SessionId=dz2ihxzr0123yjze4c2jfug2
+
+2019-10-24 12:50:21,063 [5] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthConfig' : HTTP Raw response:
+2019-10-24 12:50:21,067 [4] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthConfig' : HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Thu, 24 Oct 2019 10:50:21 GMT,Thu, 24 Oct 2019 10:50:20 GMT
+Server: SimpleHTTP/0.6 Python/3.6.4,Microsoft-IIS/10.0
+X-Powered-By: ASP.NET
+Content-Length: 1568
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+{"issuer":"OAuthServer","jwks_uri":"http://80.158.47.39/11SP15_Demo/oauthserver/.well-known/jwks","authorization_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/authorize","token_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/token","userinfo_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/userinfo","end_session_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/endsession","check_session_iframe":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/checksession","revocation_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/revocation","introspection_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/introspect","frontchannel_logout_supported":true,"frontchannel_logout_session_supported":true,"scopes_supported":["Innovator","offline_access"],"claims_supported":[],"response_types_supported":["code","token","id_token","id_token token","code id_token","code token","code id_token token"],"response_modes_supported":["form_post","query","fragment"],"grant_types_supported":["authorization_code","client_credentials","password","refresh_token","implicit","impersonate"],"subject_types_supported":["public"],"id_token_signing_alg_values_supported":["RS256"],"code_challenge_methods_supported":["plain","S256"],"token_endpoint_auth_methods_supported":["client_secret_post","client_secret_basic"],"protocol_version":"1.0","protocol_info":{"protocol_type":"Standard","authorization_header":"Authorization","www_authenticate_header":"WWW-Authenticate","unauthorized_status_code":401}}
+2019-10-24 12:50:21,077 [4] INFO  - Step 'GetARASOAuth' : Step 'GetOAuthConfig' ended successfully
+2019-10-24 12:50:21,080 [5] INFO  - Step 'GetARASOAuth' : Step 'GetAccessToken' : Step 'GetAccessToken' started
+2019-10-24 12:50:21,087 [5] INFO  - Step 'GetARASOAuth' : Step 'GetAccessToken' : Fetching HTTP Url: 'http://80.158.47.39/11SP15_Demo/oauthserver/connect/token'
+2019-10-24 12:50:21,418 [4] INFO  - Step 'GetARASOAuth' : Step 'GetAccessToken' : Server returned status code: 200
+2019-10-24 12:50:21,422 [3] INFO  - Step 'GetARASOAuth' : Step 'GetAccessToken' : HTTP Raw request:
+2019-10-24 12:50:21,426 [5] INFO  - Step 'GetARASOAuth' : Step 'GetAccessToken' : POST http://80.158.47.39/11SP15_Demo/oauthserver/connect/token 1.1
+Host: 80.158.47.39
+Cookie: ASP.NET_SessionId=dz2ihxzr0123yjze4c2jfug2
+Content-Length: 130
+Expect: 100-continue
+grant_type=password&scope=Innovator&client_id=IOMApp&username=admin&password=607920B64FE136F9AB2389E371852AF2&database=11SP15_Demo
+
+2019-10-24 12:50:21,431 [4] INFO  - Step 'GetARASOAuth' : Step 'GetAccessToken' : HTTP Raw response:
+2019-10-24 12:50:21,436 [3] INFO  - Step 'GetARASOAuth' : Step 'GetAccessToken' : HTTP/1.1 200 OK
+Pragma: no-cache
+Content-Length: 876
+Cache-Control: no-store, no-cache, max-age=0, private
+Content-Type: application/json; charset=utf-8
+Date: Thu, 24 Oct 2019 10:50:21 GMT,Thu, 24 Oct 2019 10:50:20 GMT
+Server: SimpleHTTP/0.6 Python/3.6.4,Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCIsImtpZCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCJ9.eyJpc3MiOiJPQXV0aFNlcnZlciIsImF1ZCI6Ik9BdXRoU2VydmVyL3Jlc291cmNlcyIsImV4cCI6MTU3MTk0MzAyMSwibmJmIjoxNTcxOTE0MjIxLCJjbGllbnRfaWQiOiJJT01BcHAiLCJzY29wZSI6Iklubm92YXRvciIsInN1YiI6ImFkbWluIiwiYXV0aF90aW1lIjoxNTcxOTE0MjIxLCJpZHAiOiJpZHNydiIsIm5hbWUiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4iLCJkYXRhYmFzZSI6IjExU1AxNV9EZW1vIiwiYW1yIjpbInBhc3N3b3JkIl19.UcZXDdkwP2PXJiHyf-J2DId11AmUSr07RES5cXJUX_ymZNv0W4QVggGwYmyTkDx9AWuMU6n_MnvgCI5hx3DFroFEXtbcdu0s_PAYoN2Fpwq785oCH3uJLMEj1OVWS5Zqt9a5ygPoDvlNLCwUysmIG-g86L4NDwrRk9GW6H1i4HzWiaPVxDn_vuX1mbL1cG1QsH-pMe5-YnvNQOvdBct2STloykHd637S383hiuR_8tW1CeJ_8FZVcs1sxGxHkQGGmiJ4VgxURsXOPdYSV-U_QPTMmQ5pHs8RBuJyP6X6FfPpjsrosrK5r8J7-kr5qkcTCeBmfSxl7JIXsUkR__TC7g","expires_in":28800,"token_type":"Bearer"}
+2019-10-24 12:50:21,445 [3] INFO  - Step 'GetARASOAuth' : Step 'GetAccessToken' ended successfully
+2019-10-24 12:50:21,451 [4] INFO  - Step 'GetARASOAuth' : Step 'GetBearerAccess' : Step 'GetBearerAccess' started
+2019-10-24 12:50:21,457 [4] INFO  - Step 'GetARASOAuth' : Step 'GetBearerAccess' : Input Parameter 'Prefix', Value: 'Bearer '
+2019-10-24 12:50:21,463 [3] INFO  - Step 'GetARASOAuth' : Step 'GetBearerAccess' : Input Parameter 'Suffix', Value: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCIsImtpZCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCJ9.eyJpc3MiOiJPQXV0aFNlcnZlciIsImF1ZCI6Ik9BdXRoU2VydmVyL3Jlc291cmNlcyIsImV4cCI6MTU3MTk0MzAyMSwibmJmIjoxNTcxOTE0MjIxLCJjbGllbnRfaWQiOiJJT01BcHAiLCJzY29wZSI6Iklubm92YXRvciIsInN1YiI6ImFkbWluIiwiYXV0aF90aW1lIjoxNTcxOTE0MjIxLCJpZHAiOiJpZHNydiIsIm5hbWUiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4iLCJkYXRhYmFzZSI6IjExU1AxNV9EZW1vIiwiYW1yIjpbInBhc3N3b3JkIl19.UcZXDdkwP2PXJiHyf-J2DId11AmUSr07RES5cXJUX_ymZNv0W4QVggGwYmyTkDx9AWuMU6n_MnvgCI5hx3DFroFEXtbcdu0s_PAYoN2Fpwq785oCH3uJLMEj1OVWS5Zqt9a5ygPoDvlNLCwUysmIG-g86L4NDwrRk9GW6H1i4HzWiaPVxDn_vuX1mbL1cG1QsH-pMe5-YnvNQOvdBct2STloykHd637S383hiuR_8tW1CeJ_8FZVcs1sxGxHkQGGmiJ4VgxURsXOPdYSV-U_QPTMmQ5pHs8RBuJyP6X6FfPpjsrosrK5r8J7-kr5qkcTCeBmfSxl7JIXsUkR__TC7g'
+2019-10-24 12:50:21,466 [5] INFO  - Step 'GetARASOAuth' : Step 'GetBearerAccess' : Output Parameter 'Result', Value: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCIsImtpZCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCJ9.eyJpc3MiOiJPQXV0aFNlcnZlciIsImF1ZCI6Ik9BdXRoU2VydmVyL3Jlc291cmNlcyIsImV4cCI6MTU3MTk0MzAyMSwibmJmIjoxNTcxOTE0MjIxLCJjbGllbnRfaWQiOiJJT01BcHAiLCJzY29wZSI6Iklubm92YXRvciIsInN1YiI6ImFkbWluIiwiYXV0aF90aW1lIjoxNTcxOTE0MjIxLCJpZHAiOiJpZHNydiIsIm5hbWUiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4iLCJkYXRhYmFzZSI6IjExU1AxNV9EZW1vIiwiYW1yIjpbInBhc3N3b3JkIl19.UcZXDdkwP2PXJiHyf-J2DId11AmUSr07RES5cXJUX_ymZNv0W4QVggGwYmyTkDx9AWuMU6n_MnvgCI5hx3DFroFEXtbcdu0s_PAYoN2Fpwq785oCH3uJLMEj1OVWS5Zqt9a5ygPoDvlNLCwUysmIG-g86L4NDwrRk9GW6H1i4HzWiaPVxDn_vuX1mbL1cG1QsH-pMe5-YnvNQOvdBct2STloykHd637S383hiuR_8tW1CeJ_8FZVcs1sxGxHkQGGmiJ4VgxURsXOPdYSV-U_QPTMmQ5pHs8RBuJyP6X6FfPpjsrosrK5r8J7-kr5qkcTCeBmfSxl7JIXsUkR__TC7g'
+2019-10-24 12:50:21,471 [5] INFO  - Step 'GetARASOAuth' : Step 'GetBearerAccess' ended successfully
+2019-10-24 12:50:21,476 [5] INFO  - Step 'GetARASOAuth' : Step 'Iteration 1' ended successfully
+2019-10-24 12:50:21,480 [5] INFO  - Step 'GetARASOAuth' : Step 'Test Flow' ended successfully
+2019-10-24 12:50:21,484 [3] INFO  - Step 'GetARASOAuth' : Step 'End' : Step 'End' started
+2019-10-24 12:50:21,497 [4] INFO  - Step 'GetARASOAuth' : Step 'End' ended successfully
+2019-10-24 12:50:24,169 [9] INFO  - Step 'GetARASOAuth' ended successfully
+2019-10-24 12:50:24,171 [9] INFO  - Step 'GetBMWVorgang' : Step 'GetBMWVorgang' started
+2019-10-24 12:50:24,233 [9] INFO  - Step 'GetBMWVorgang' : Fetching HTTP Url: 'http://80.158.47.39/11SP15_Demo/Server/InnovatorServer.aspx'
+2019-10-24 12:50:24,717 [9] INFO  - Step 'GetBMWVorgang' : Server returned status code: 200
+2019-10-24 12:50:24,719 [9] INFO  - Step 'GetBMWVorgang' : HTTP Raw request:
+2019-10-24 12:50:24,720 [9] INFO  - Step 'GetBMWVorgang' : POST http://80.158.47.39/11SP15_Demo/Server/InnovatorServer.aspx 1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCIsImtpZCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCJ9.eyJpc3MiOiJPQXV0aFNlcnZlciIsImF1ZCI6Ik9BdXRoU2VydmVyL3Jlc291cmNlcyIsImV4cCI6MTU3MTk0MzAyMSwibmJmIjoxNTcxOTE0MjIxLCJjbGllbnRfaWQiOiJJT01BcHAiLCJzY29wZSI6Iklubm92YXRvciIsInN1YiI6ImFkbWluIiwiYXV0aF90aW1lIjoxNTcxOTE0MjIxLCJpZHAiOiJpZHNydiIsIm5hbWUiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4iLCJkYXRhYmFzZSI6IjExU1AxNV9EZW1vIiwiYW1yIjpbInBhc3N3b3JkIl19.UcZXDdkwP2PXJiHyf-J2DId11AmUSr07RES5cXJUX_ymZNv0W4QVggGwYmyTkDx9AWuMU6n_MnvgCI5hx3DFroFEXtbcdu0s_PAYoN2Fpwq785oCH3uJLMEj1OVWS5Zqt9a5ygPoDvlNLCwUysmIG-g86L4NDwrRk9GW6H1i4HzWiaPVxDn_vuX1mbL1cG1QsH-pMe5-YnvNQOvdBct2STloykHd637S383hiuR_8tW1CeJ_8FZVcs1sxGxHkQGGmiJ4VgxURsXOPdYSV-U_QPTMmQ5pHs8RBuJyP6X6FfPpjsrosrK5r8J7-kr5qkcTCeBmfSxl7JIXsUkR__TC7g
+Content-Type: text/xml
+SOAPAction: ApplyItem
+Cache-Control: no-cache
+Host: 80.158.47.39
+Content-Length: 254
+Expect: 100-continue
+Proxy-Connection: Keep-Alive
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Body>
+    <ApplyItem>
+      <Item type="BMW_Vorgang" action="get" select="_verwendung,_zeitpunkt" />
+    </ApplyItem>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+2019-10-24 12:50:24,722 [9] INFO  - Step 'GetBMWVorgang' : HTTP Raw response:
+2019-10-24 12:50:24,724 [9] INFO  - Step 'GetBMWVorgang' : HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Date: Thu, 24 Oct 2019 10:50:24 GMT,Thu, 24 Oct 2019 10:50:24 GMT
+Expires: Thu, 24 Oct 2019 10:50:24 GMT
+Server: SimpleHTTP/0.6 Python/3.6.4,Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 8164
+Cache-Control: private, proxy-revalidate
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Set-Cookie: ASP.NET_SessionId=5sj2niw2klijyfjch0ahf0lx; path=/; HttpOnly
+X-BlueCoat-Authorization: 3115d594959f74a2=2CA4A4280000010236N97ZfWcg8DYqRPWmxSV+e9774LCgAAAgEAAG+5JQCEAwAAAAAAAPY4EQAAAAAA
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Body><Result><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="005FDDC9E14A4D7A9AE56E6CDCC7F3A6"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="005FDDC9E14A4D7A9AE56E6CDCC7F3A6" type="BMW_Vorgang">005FDDC9E14A4D7A9AE56E6CDCC7F3A6</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="0780F287D0D3447C9BE0F5312F233F1B"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="0780F287D0D3447C9BE0F5312F233F1B" type="BMW_Vorgang">0780F287D0D3447C9BE0F5312F233F1B</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="1CBAAD97E6804B46922CC45525BE0EB0"><_verwendung>test</_verwendung><_zeitpunkt>2020-01-01T00:00:00</_zeitpunkt><id keyed_name="1CBAAD97E6804B46922CC45525BE0EB0" type="BMW_Vorgang">1CBAAD97E6804B46922CC45525BE0EB0</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="3D236EAB060043ABAC1EB083320D3077"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="3D236EAB060043ABAC1EB083320D3077" type="BMW_Vorgang">3D236EAB060043ABAC1EB083320D3077</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="42BA4F2A4B344FBB88E47850003B47ED"><_verwendung>test</_verwendung><_zeitpunkt>2019-09-30T00:00:00</_zeitpunkt><id keyed_name="42BA4F2A4B344FBB88E47850003B47ED" type="BMW_Vorgang">42BA4F2A4B344FBB88E47850003B47ED</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="4390D2BDB1484F71BF99B928B4E9E6FF"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="4390D2BDB1484F71BF99B928B4E9E6FF" type="BMW_Vorgang">4390D2BDB1484F71BF99B928B4E9E6FF</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="44198034A65B4F59B4F89A4B2ADC313D"><_verwendung>chrome</_verwendung><_zeitpunkt>2020-02-02T00:00:00</_zeitpunkt><id keyed_name="44198034A65B4F59B4F89A4B2ADC313D" type="BMW_Vorgang">44198034A65B4F59B4F89A4B2ADC313D</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="49F91CCCCA3C4388AA603CA2EA9C4319"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="49F91CCCCA3C4388AA603CA2EA9C4319" type="BMW_Vorgang">49F91CCCCA3C4388AA603CA2EA9C4319</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="4CC2EABBA1B84940A7D643991D9FE640"><_verwendung>chrome</_verwendung><_zeitpunkt>2020-02-02T00:00:00</_zeitpunkt><id keyed_name="4CC2EABBA1B84940A7D643991D9FE640" type="BMW_Vorgang">4CC2EABBA1B84940A7D643991D9FE640</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="4E24A8B1D0874DBFA997765BA6179B75"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="4E24A8B1D0874DBFA997765BA6179B75" type="BMW_Vorgang">4E24A8B1D0874DBFA997765BA6179B75</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="607F75ED92A64396A7F1688FBC0B6DFC"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="607F75ED92A64396A7F1688FBC0B6DFC" type="BMW_Vorgang">607F75ED92A64396A7F1688FBC0B6DFC</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="696EA43425074E08BF651086997B1CAC"><_verwendung>testbmo</_verwendung><_zeitpunkt>2019-09-30T00:00:00</_zeitpunkt><id keyed_name="696EA43425074E08BF651086997B1CAC" type="BMW_Vorgang">696EA43425074E08BF651086997B1CAC</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="6DE3743AFD7F4F7D8258D107EE5CB437"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="6DE3743AFD7F4F7D8258D107EE5CB437" type="BMW_Vorgang">6DE3743AFD7F4F7D8258D107EE5CB437</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="708E87D316A34DA7BF51C0B177B48423"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="708E87D316A34DA7BF51C0B177B48423" type="BMW_Vorgang">708E87D316A34DA7BF51C0B177B48423</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="75DDCF562F1D49ACB84B36A41E8403F2"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="75DDCF562F1D49ACB84B36A41E8403F2" type="BMW_Vorgang">75DDCF562F1D49ACB84B36A41E8403F2</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="809EE92F9F094AABB370E1D10656BA2E"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="809EE92F9F094AABB370E1D10656BA2E" type="BMW_Vorgang">809EE92F9F094AABB370E1D10656BA2E</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="821E94694F8D467384680067C4486B83"><_verwendung>test</_verwendung><_zeitpunkt>2020-01-01T00:00:00</_zeitpunkt><id keyed_name="821E94694F8D467384680067C4486B83" type="BMW_Vorgang">821E94694F8D467384680067C4486B83</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="8EB2D0BC46954FB3BE7915E70E1118D7"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="8EB2D0BC46954FB3BE7915E70E1118D7" type="BMW_Vorgang">8EB2D0BC46954FB3BE7915E70E1118D7</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="A10FB146B1E74E1FAFC8D811C8C8D21C"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="A10FB146B1E74E1FAFC8D811C8C8D21C" type="BMW_Vorgang">A10FB146B1E74E1FAFC8D811C8C8D21C</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="AAADB39471C94F359AC18DB41BC03708"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="AAADB39471C94F359AC18DB41BC03708" type="BMW_Vorgang">AAADB39471C94F359AC18DB41BC03708</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="AF1786FC3CE841E9BA7660BFC5E3EA42"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="AF1786FC3CE841E9BA7660BFC5E3EA42" type="BMW_Vorgang">AF1786FC3CE841E9BA7660BFC5E3EA42</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="B35F1E49CD654533A06F427374EC52C7"><_verwendung>test</_verwendung><_zeitpunkt>2019-10-16T00:00:00</_zeitpunkt><id keyed_name="B35F1E49CD654533A06F427374EC52C7" type="BMW_Vorgang">B35F1E49CD654533A06F427374EC52C7</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="BDE476138B354297B87A7DCDE9FEEDC5"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="BDE476138B354297B87A7DCDE9FEEDC5" type="BMW_Vorgang">BDE476138B354297B87A7DCDE9FEEDC5</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="E558F5DA665946749DF3706847403A96"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="E558F5DA665946749DF3706847403A96" type="BMW_Vorgang">E558F5DA665946749DF3706847403A96</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="ED23267B649544B2943F7CC86AD7B0FF"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="ED23267B649544B2943F7CC86AD7B0FF" type="BMW_Vorgang">ED23267B649544B2943F7CC86AD7B0FF</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="EFE4402068324BBDA2C65F9BC532777A"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="EFE4402068324BBDA2C65F9BC532777A" type="BMW_Vorgang">EFE4402068324BBDA2C65F9BC532777A</id></Item><Item type="BMW_Vorgang" typeId="2988B913F5514A4D8FDC9A339DA3278D" id="F5EFA2F661AB4EDE92EB05ED7D5A3CB9"><_verwendung>Paramtext</_verwendung><_zeitpunkt>2020-01-02T00:00:00</_zeitpunkt><id keyed_name="F5EFA2F661AB4EDE92EB05ED7D5A3CB9" type="BMW_Vorgang">F5EFA2F661AB4EDE92EB05ED7D5A3CB9</id></Item></Result></SOAP-ENV:Body></SOAP-ENV:Envelope>
+2019-10-24 12:50:24,733 [9] INFO  - Step 'GetBMWVorgang' ended successfully
+2019-10-24 12:50:24,735 [9] INFO  - Step 'Iteration 1' ended successfully
+2019-10-24 12:50:24,738 [9] INFO  - Step 'Test Flow' ended successfully
+2019-10-24 12:50:24,740 [9] INFO  - Step 'End' : Step 'End' started
+2019-10-24 12:50:24,752 [9] INFO  - Step 'End' ended successfully

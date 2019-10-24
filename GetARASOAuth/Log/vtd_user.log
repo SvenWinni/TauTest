@@ -1,0 +1,93 @@
+2019-10-24 12:50:18,895 [1] INFO  - Loaded appender: FileAppenderInternal
+2019-10-24 12:50:18,911 [1] INFO  - Loaded appender: FileAppenderExternal
+2019-10-24 12:50:18,912 [1] INFO  - Loaded appender: UserLoggerAppender
+2019-10-24 12:50:18,913 [1] INFO  - Loaded appender: FileAppenderInternal
+2019-10-24 12:50:18,914 [1] INFO  - Loaded appender: FileAppenderExternal
+2019-10-24 12:50:18,914 [1] INFO  - Loaded appender: UserLoggerAppender
+2019-10-24 12:50:19,851 [9] INFO  - Step 'Start' : Step 'Start' started
+2019-10-24 12:50:19,954 [9] INFO  - Step 'Start' ended successfully
+2019-10-24 12:50:19,972 [9] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2019-10-24 12:50:19,982 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2019-10-24 12:50:19,986 [9] INFO  - Step 'GetOAuthLocation' : Step 'GetOAuthLocation' started
+2019-10-24 12:50:20,046 [9] INFO  - Step 'GetOAuthLocation' : Fetching HTTP Url: 'http://80.158.47.39/11SP15_Demo/Server/OAuthServerDiscovery.aspx'
+2019-10-24 12:50:20,606 [9] INFO  - Step 'GetOAuthLocation' : Server returned status code: 200
+2019-10-24 12:50:20,609 [9] INFO  - Step 'GetOAuthLocation' : HTTP Raw request:
+2019-10-24 12:50:20,613 [9] INFO  - Step 'GetOAuthLocation' : GET http://80.158.47.39/11SP15_Demo/Server/OAuthServerDiscovery.aspx 1.1
+Host: 80.158.47.39
+Proxy-Connection: Keep-Alive
+
+2019-10-24 12:50:20,616 [9] INFO  - Step 'GetOAuthLocation' : HTTP Raw response:
+2019-10-24 12:50:20,621 [9] INFO  - Step 'GetOAuthLocation' : HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/json; charset=utf-8
+Date: Thu, 24 Oct 2019 10:50:20 GMT,Thu, 24 Oct 2019 10:50:20 GMT
+Expires: Thu, 24 Oct 2019 10:50:20 GMT
+Server: SimpleHTTP/0.6 Python/3.6.4,Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Content-Length: 70
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+Set-Cookie: ASP.NET_SessionId=dz2ihxzr0123yjze4c2jfug2; path=/; HttpOnly
+X-BlueCoat-Authorization: 3115d594959f74a2=2CA4A42800000102zyh0Lhay9V3qAbVPiXh2cVe7t78LCgAAAgEAAGu5JQCEAwAAAAAAAPY4EQAAAAAA
+{"locations":[{"uri":"http://80.158.47.39/11SP15_Demo/oauthserver/"}]}
+2019-10-24 12:50:20,698 [9] INFO  - Step 'GetOAuthLocation' ended successfully
+2019-10-24 12:50:20,701 [9] INFO  - Step 'OAuthConfigURL' : Step 'OAuthConfigURL' started
+2019-10-24 12:50:20,711 [9] INFO  - Step 'OAuthConfigURL' : Input Parameter 'Prefix', Value: 'http://80.158.47.39/11SP15_Demo/oauthserver/'
+2019-10-24 12:50:20,716 [9] INFO  - Step 'OAuthConfigURL' : Input Parameter 'Suffix', Value: '.well-known/openid-configuration'
+2019-10-24 12:50:20,720 [9] INFO  - Step 'OAuthConfigURL' : Output Parameter 'Result', Value: 'http://80.158.47.39/11SP15_Demo/oauthserver/.well-known/openid-configuration'
+2019-10-24 12:50:20,725 [9] INFO  - Step 'OAuthConfigURL' ended successfully
+2019-10-24 12:50:20,728 [9] INFO  - Step 'GetOAuthConfig' : Step 'GetOAuthConfig' started
+2019-10-24 12:50:20,732 [9] INFO  - Step 'GetOAuthConfig' : Fetching HTTP Url: 'http://80.158.47.39/11SP15_Demo/oauthserver/.well-known/openid-configuration'
+2019-10-24 12:50:21,053 [9] INFO  - Step 'GetOAuthConfig' : Server returned status code: 200
+2019-10-24 12:50:21,056 [9] INFO  - Step 'GetOAuthConfig' : HTTP Raw request:
+2019-10-24 12:50:21,059 [9] INFO  - Step 'GetOAuthConfig' : GET http://80.158.47.39/11SP15_Demo/oauthserver/.well-known/openid-configuration 1.1
+Accept: application/json
+Host: 80.158.47.39
+Cookie: ASP.NET_SessionId=dz2ihxzr0123yjze4c2jfug2
+
+2019-10-24 12:50:21,062 [9] INFO  - Step 'GetOAuthConfig' : HTTP Raw response:
+2019-10-24 12:50:21,065 [9] INFO  - Step 'GetOAuthConfig' : HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Thu, 24 Oct 2019 10:50:21 GMT,Thu, 24 Oct 2019 10:50:20 GMT
+Server: SimpleHTTP/0.6 Python/3.6.4,Microsoft-IIS/10.0
+X-Powered-By: ASP.NET
+Content-Length: 1568
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+{"issuer":"OAuthServer","jwks_uri":"http://80.158.47.39/11SP15_Demo/oauthserver/.well-known/jwks","authorization_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/authorize","token_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/token","userinfo_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/userinfo","end_session_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/endsession","check_session_iframe":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/checksession","revocation_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/revocation","introspection_endpoint":"http://80.158.47.39/11SP15_Demo/oauthserver/connect/introspect","frontchannel_logout_supported":true,"frontchannel_logout_session_supported":true,"scopes_supported":["Innovator","offline_access"],"claims_supported":[],"response_types_supported":["code","token","id_token","id_token token","code id_token","code token","code id_token token"],"response_modes_supported":["form_post","query","fragment"],"grant_types_supported":["authorization_code","client_credentials","password","refresh_token","implicit","impersonate"],"subject_types_supported":["public"],"id_token_signing_alg_values_supported":["RS256"],"code_challenge_methods_supported":["plain","S256"],"token_endpoint_auth_methods_supported":["client_secret_post","client_secret_basic"],"protocol_version":"1.0","protocol_info":{"protocol_type":"Standard","authorization_header":"Authorization","www_authenticate_header":"WWW-Authenticate","unauthorized_status_code":401}}
+2019-10-24 12:50:21,075 [9] INFO  - Step 'GetOAuthConfig' ended successfully
+2019-10-24 12:50:21,079 [9] INFO  - Step 'GetAccessToken' : Step 'GetAccessToken' started
+2019-10-24 12:50:21,085 [9] INFO  - Step 'GetAccessToken' : Fetching HTTP Url: 'http://80.158.47.39/11SP15_Demo/oauthserver/connect/token'
+2019-10-24 12:50:21,417 [9] INFO  - Step 'GetAccessToken' : Server returned status code: 200
+2019-10-24 12:50:21,420 [9] INFO  - Step 'GetAccessToken' : HTTP Raw request:
+2019-10-24 12:50:21,424 [9] INFO  - Step 'GetAccessToken' : POST http://80.158.47.39/11SP15_Demo/oauthserver/connect/token 1.1
+Host: 80.158.47.39
+Cookie: ASP.NET_SessionId=dz2ihxzr0123yjze4c2jfug2
+Content-Length: 130
+Expect: 100-continue
+grant_type=password&scope=Innovator&client_id=IOMApp&username=admin&password=607920B64FE136F9AB2389E371852AF2&database=11SP15_Demo
+
+2019-10-24 12:50:21,428 [9] INFO  - Step 'GetAccessToken' : HTTP Raw response:
+2019-10-24 12:50:21,434 [9] INFO  - Step 'GetAccessToken' : HTTP/1.1 200 OK
+Pragma: no-cache
+Content-Length: 876
+Cache-Control: no-store, no-cache, max-age=0, private
+Content-Type: application/json; charset=utf-8
+Date: Thu, 24 Oct 2019 10:50:21 GMT,Thu, 24 Oct 2019 10:50:20 GMT
+Server: SimpleHTTP/0.6 Python/3.6.4,Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Proxy-Connection: Keep-Alive
+Connection: Keep-Alive
+{"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCIsImtpZCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCJ9.eyJpc3MiOiJPQXV0aFNlcnZlciIsImF1ZCI6Ik9BdXRoU2VydmVyL3Jlc291cmNlcyIsImV4cCI6MTU3MTk0MzAyMSwibmJmIjoxNTcxOTE0MjIxLCJjbGllbnRfaWQiOiJJT01BcHAiLCJzY29wZSI6Iklubm92YXRvciIsInN1YiI6ImFkbWluIiwiYXV0aF90aW1lIjoxNTcxOTE0MjIxLCJpZHAiOiJpZHNydiIsIm5hbWUiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4iLCJkYXRhYmFzZSI6IjExU1AxNV9EZW1vIiwiYW1yIjpbInBhc3N3b3JkIl19.UcZXDdkwP2PXJiHyf-J2DId11AmUSr07RES5cXJUX_ymZNv0W4QVggGwYmyTkDx9AWuMU6n_MnvgCI5hx3DFroFEXtbcdu0s_PAYoN2Fpwq785oCH3uJLMEj1OVWS5Zqt9a5ygPoDvlNLCwUysmIG-g86L4NDwrRk9GW6H1i4HzWiaPVxDn_vuX1mbL1cG1QsH-pMe5-YnvNQOvdBct2STloykHd637S383hiuR_8tW1CeJ_8FZVcs1sxGxHkQGGmiJ4VgxURsXOPdYSV-U_QPTMmQ5pHs8RBuJyP6X6FfPpjsrosrK5r8J7-kr5qkcTCeBmfSxl7JIXsUkR__TC7g","expires_in":28800,"token_type":"Bearer"}
+2019-10-24 12:50:21,443 [9] INFO  - Step 'GetAccessToken' ended successfully
+2019-10-24 12:50:21,448 [9] INFO  - Step 'GetBearerAccess' : Step 'GetBearerAccess' started
+2019-10-24 12:50:21,456 [9] INFO  - Step 'GetBearerAccess' : Input Parameter 'Prefix', Value: 'Bearer '
+2019-10-24 12:50:21,461 [9] INFO  - Step 'GetBearerAccess' : Input Parameter 'Suffix', Value: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCIsImtpZCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCJ9.eyJpc3MiOiJPQXV0aFNlcnZlciIsImF1ZCI6Ik9BdXRoU2VydmVyL3Jlc291cmNlcyIsImV4cCI6MTU3MTk0MzAyMSwibmJmIjoxNTcxOTE0MjIxLCJjbGllbnRfaWQiOiJJT01BcHAiLCJzY29wZSI6Iklubm92YXRvciIsInN1YiI6ImFkbWluIiwiYXV0aF90aW1lIjoxNTcxOTE0MjIxLCJpZHAiOiJpZHNydiIsIm5hbWUiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4iLCJkYXRhYmFzZSI6IjExU1AxNV9EZW1vIiwiYW1yIjpbInBhc3N3b3JkIl19.UcZXDdkwP2PXJiHyf-J2DId11AmUSr07RES5cXJUX_ymZNv0W4QVggGwYmyTkDx9AWuMU6n_MnvgCI5hx3DFroFEXtbcdu0s_PAYoN2Fpwq785oCH3uJLMEj1OVWS5Zqt9a5ygPoDvlNLCwUysmIG-g86L4NDwrRk9GW6H1i4HzWiaPVxDn_vuX1mbL1cG1QsH-pMe5-YnvNQOvdBct2STloykHd637S383hiuR_8tW1CeJ_8FZVcs1sxGxHkQGGmiJ4VgxURsXOPdYSV-U_QPTMmQ5pHs8RBuJyP6X6FfPpjsrosrK5r8J7-kr5qkcTCeBmfSxl7JIXsUkR__TC7g'
+2019-10-24 12:50:21,465 [9] INFO  - Step 'GetBearerAccess' : Output Parameter 'Result', Value: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCIsImtpZCI6InlSMTBQQ2JXTGFoQU9LNXl5cU1rMXBseWh4NCJ9.eyJpc3MiOiJPQXV0aFNlcnZlciIsImF1ZCI6Ik9BdXRoU2VydmVyL3Jlc291cmNlcyIsImV4cCI6MTU3MTk0MzAyMSwibmJmIjoxNTcxOTE0MjIxLCJjbGllbnRfaWQiOiJJT01BcHAiLCJzY29wZSI6Iklubm92YXRvciIsInN1YiI6ImFkbWluIiwiYXV0aF90aW1lIjoxNTcxOTE0MjIxLCJpZHAiOiJpZHNydiIsIm5hbWUiOiJhZG1pbiIsInVzZXJuYW1lIjoiYWRtaW4iLCJkYXRhYmFzZSI6IjExU1AxNV9EZW1vIiwiYW1yIjpbInBhc3N3b3JkIl19.UcZXDdkwP2PXJiHyf-J2DId11AmUSr07RES5cXJUX_ymZNv0W4QVggGwYmyTkDx9AWuMU6n_MnvgCI5hx3DFroFEXtbcdu0s_PAYoN2Fpwq785oCH3uJLMEj1OVWS5Zqt9a5ygPoDvlNLCwUysmIG-g86L4NDwrRk9GW6H1i4HzWiaPVxDn_vuX1mbL1cG1QsH-pMe5-YnvNQOvdBct2STloykHd637S383hiuR_8tW1CeJ_8FZVcs1sxGxHkQGGmiJ4VgxURsXOPdYSV-U_QPTMmQ5pHs8RBuJyP6X6FfPpjsrosrK5r8J7-kr5qkcTCeBmfSxl7JIXsUkR__TC7g'
+2019-10-24 12:50:21,470 [9] INFO  - Step 'GetBearerAccess' ended successfully
+2019-10-24 12:50:21,474 [9] INFO  - Step 'Iteration 1' ended successfully
+2019-10-24 12:50:21,479 [9] INFO  - Step 'Test Flow' ended successfully
+2019-10-24 12:50:21,483 [9] INFO  - Step 'End' : Step 'End' started
+2019-10-24 12:50:21,496 [9] INFO  - Step 'End' ended successfully

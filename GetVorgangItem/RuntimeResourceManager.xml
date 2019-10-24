@@ -1,0 +1,3 @@
+<RuntimeResourceManager>
+<RuntimeResource><Key>{Step.GeneralProperties.CallSTTest9.ScriptPath}</Key><Path>C:\Users\A289750\Documents\Spielplatz\UFT\API\GetARASOAuth</Path><Value>..\GetARASOAuth</Value><AddinId>DefaultDependencyResolver</AddinId></RuntimeResource>
+</RuntimeResourceManager>

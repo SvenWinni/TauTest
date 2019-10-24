@@ -1,0 +1,1 @@
+{"locations":[{"uri":"http://80.158.47.39/11SP15_Demo/oauthserver/"}]}
